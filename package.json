@@ -2,7 +2,7 @@
   "name": "lina-interactions-js",
   "version": "1.0.0",
   "description": "Helpers for Lina interactions",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
