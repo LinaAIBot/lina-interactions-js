@@ -35,7 +35,6 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-      - run: npm version ${{steps.tag.outputs.tag}}
-      - run: npm publish --access public
+      - run: npm publish --access public --tag ${{steps.tag.outputs.tag}}
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
